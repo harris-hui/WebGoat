@@ -70,8 +70,7 @@ jobs:
       name: build java
       run: |
          echo "Run, Build Application using script"
-         make bootstrap
-         make release
+         ./mvnw clean compile
 
     - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@v2
